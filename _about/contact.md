@@ -16,13 +16,9 @@ date: '2016-05-28'
 A list of available social media to get in touch with fellow KaOS users.  Some are officially maintained, some are user started, community efforts.
 
 #### KaOS supported
-[Forum](https://kaosx.us/forum){:target="_blank"}
+[Forum](https://forum.kaosx.us){:target="_blank"}
 
 [Google Groups](https://groups.google.com/forum/?fromgroups#!forum/kaos-general){:target="_blank"} Mailing list, also used to list flagged packages
-
-[Google Plus](https://plus.google.com/u/0/communities/116669111554447085724){:target="_blank"}
-
-[Google Plus Español](https://plus.google.com/u/0/communities/100774075681090153759){:target="_blank"}
 
 [Github](https://github.com/KaOSx){:target="_blank"} Complete code source for all KaOS projects, fork & create pull request to help
 
@@ -36,11 +32,12 @@ A list of available social media to get in touch with fellow KaOS users.  Some a
 #### Community maintained
 [Facebook](https://www.facebook.com/groups/kaosx/){:target="_blank"}
 
+[Telegram Channel](https://t.me/kaos_channel){:target="_blank"}
+
 [German IRC](http://webchat.freenode.net/?channels=kaosx-de){:target="_blank"}
 
-[Telegram Channel](https://telegram.me/kaos_es){:target="_blank"} Mainly used for Spanish speakers
+[Telegram Group ESPAÑOL](https://telegram.me/kaos_es){:target="_blank"}
 
-[Foro en ESPAÑOL](http://kaoticos.xyz/){:target="_blank"}
 
 
 

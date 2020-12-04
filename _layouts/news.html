@@ -10,7 +10,9 @@ layout: default
 <div class="Docs">
   <div class="container">
 
-    {% include news_contents.html %}
+    
+                {% include news_contents.html %}
+            
 
     <article>
       <h1>{{ page.title }}</h1>
@@ -24,3 +26,23 @@ layout: default
 
 <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/highlight.min.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
+
+<script>
+        (function () {
+                // Index of default active menus on document.ready
+                var defaultActives = [ 1 ];
+
+                var acc = document.querySelectorAll(".News-nav h4");
+                var i;
+
+                for (i = 0; i < acc.length; i++) {
+                        if (defaultActives.includes(i)) {
+                                acc[i].classList.add('active');
+                        }
+                        acc[i].addEventListener('click', function() {
+                                this.classList.toggle('active');
+                        });
+                }
+        })();
+</script>
+

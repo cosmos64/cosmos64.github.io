@@ -49,6 +49,19 @@ mkdir /mnt/kaos
 mount /dev/device_or_partition_name /mnt/kaos
 ```
 
+For LUKS encrypted devices, mount won't work, use `udisksctl` instead, first unlock the device (all commands as regular user):
+```
+udisksctl unlock -b /dev/device_or_partition_name
+```
+Get the device mapper name:
+```
+ls - la /dev/mapper
+```
+then mount the returned mapper:
+```
+udiskctl mount -b /dev/mapper/mapper_name
+```
+
 ### Changing Root
 {: .offset}
 

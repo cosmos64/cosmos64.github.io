@@ -35,14 +35,14 @@ KaOS provides you with an easy to use option to give very complete info about al
 Ctrl-Shift-S
 ```
 
-It will take 10-20 seconds to gather all info and will return with a pop-up window. That window contains a link you can click on and will take you to gist at github. You can check the report there, or directly right click the link to copy and paste it in the forum, a bug report, a G+ post or provide it in IRC.
+That will open a pop-up window, with information on what logs will be gathered and the path to your home directory were the octopi-sysinfo log will be created. It will take 10-20 seconds to gather all info. After checking the report you can now use a pastebin service or copy/paste it directly in the forum, a bug report, Gitter or provide it in IRC.
 
 ### Info to provide for Installation Issues
 {: .offset}
 
 If for any reason you are faced with problems in Live mode or running the installer, first follow this check-list:
 
-* How did you create the Live Media? Make sure to follow the tutorials to properly create installation media for KaOS. See [USB](http://kaosx.us/docs/usb) and [DVD](http://kaosx.us/docs/dvd) creation guides.
+* How did you create the Live Media? Make sure to follow the tutorials to properly create installation media for KaOS. See [USB](http://kaosx.us/docs/usb_flash/) and [DVD](http://kaosx.us/docs/dvd/) creation guides.
 * Did you check the md5sum of the downloaded ISO?
 
   ```
@@ -71,7 +71,7 @@ sudo fdisk -l
 
 All examples so far create text info that often is too large to add to a forum post, not possible supply in an IRC channel or hard to read when added to an email. It is much cleaner and easier to copy the output of any command and paste it into a service like:
 
-[http://paste.kde.org/](http://paste.kde.org/)
+[https://paste.ee/](https://paste.ee/)
 
 [https://gist.github.com/](https://gist.github.com/)
 

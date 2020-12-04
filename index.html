@@ -32,6 +32,7 @@ class: home
       <a href="{{ site.baseurl }}#builds" class="Button">Latest Builds</a>
       <a href="{{ site.baseurl }}#goals" class="Button">Goals</a>
       <a href="{{ site.baseurl }}#repo" class="Button">Limited Repos</a>
+      <a href="{{ site.baseurl }}#donate" class="Button">Donate</a>
     </div>
   </div>
 </header>
@@ -43,6 +44,7 @@ class: home
 
   <div class="Features" id="builds">
     <div class="Carousel">
+    <marquee behavior="scroll" direction="left">
       <div class="CarouselItem">
         <div class="CarouselItem-label">KDE and Qt focused</div>
       </div>
@@ -70,16 +72,17 @@ class: home
       <div class="CarouselItem">
         <div class="CarouselItem-label">Every package in every repository is build by and for KaOS</div>
       </div>
+      </marquee>
     </div>
-
-    <p class="Features-text">
-      KaOS follows the latest innovations, always shipping the most up to date there is available
-      for the Plasma Desktop.  Click below to see what is being prepared to move to all users soon.
-    </p>
-
-    <div class="Features-actions">
-      <a href="http://kaosx.tk/packages/index.php?subdir=build&sortby=date&order=descending" class="Button">See the latest builds</a>
+    <div class="Features-text">
+        KaOS follows the latest innovations, always shipping the most up to date there is available for the Plasma Desktop.
+        This list shows what is being prepared to move to all users soon.
     </div>
+    
+    <iframe src="https://kaosx.us/packages/feature.php"></iframe>
+    <!--<iframe src="https://kaos-frankfurt.tk/packages/feature.php?subdir=build&sortby=date&order=descending&last=14"></iframe>-->
+    <p><a href="https://kaosx.us/packages/mirrors.php" class="Button">Mirror Status</a></p>
+    
   </div>
 
   {% include screens.html %}
@@ -108,28 +111,4 @@ class: home
             stringsElement: $('#typed2-strings')
         });
     });
-</script>
-
-<!-- scrolling text -->
-<script>
-  $(function() {
-    var $carousel = $('.Carousel');
-    $carousel.wrapInner($('<div class="CarouselGroup"/>'));
-    var $group = $('.CarouselGroup');
-    var $group2 = $group.clone().appendTo($carousel);
-
-    var animate = function() {
-      $group.css({marginLeft: 0}).animate({marginLeft: -$group.width()}, 70000, 'linear').promise().done(function() {
-        animate();
-      });
-    };
-
-    animate();
-
-    if (window.devicePixelRatio > 1) {
-      var $screenshot = $('.Home-screenshot img');
-
-      $screenshot.attr('src', $screenshot.attr('src').replace('.', '_2x.'));
-    }
-  });
 </script>
